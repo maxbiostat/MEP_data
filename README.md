@@ -11,7 +11,7 @@ The full data base can be found [here](https://github.com/maxbiostat/treetime/bl
 Note that sequences were downloaded pre-aligned.
 
 ### Human H3N2 Influenza A
-This data set contains 308 hemagglutinin (HA) [sequences](https://github.com/maxbiostat/MEP_data/blob/master/flu_ha/flu_HA.fasta).
+This data set contains 226 hemagglutinin (HA) [sequences](https://github.com/maxbiostat/MEP_data/blob/master/flu_ha/flu_HA.fasta).
 All human H3N2 sequences longer than 1700 base pairs were dowloaded from the [Influenza Research Database](http://www.fludb.org/brc/home.spg?decorator=influenza) totalising 8455 sequences.
 These were [downsampled](https://github.com/maxbiostat/treetime/blob/master/data/genesis/create_Influenza.R) in order for us to have at most five sequences from each year after 1968.
 Sequences were then aligned by codons using the [MAFFT](http://mafft.cbrc.jp/alignment/software/) program called from inside the [Geneious](http://www.geneious.com/) software package.
