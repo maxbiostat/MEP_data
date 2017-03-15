@@ -1,5 +1,5 @@
 rdv <- list()
-rdv$table <- read.table("../hiv_pol/hiv_pol_USA_rdv.txt", header = TRUE)
+rdv$table <- read.table("../flu_ha/flu_HA_rdv.txt", header = TRUE)
 rdv$lm <- lm(distance ~ date, data = rdv$table)
 plotBestRooting <- function(result, Maintitle = ""){
   require(ggplot2)
@@ -19,6 +19,6 @@ plotBestRooting <- function(result, Maintitle = ""){
     ggtitle(paste(Maintitle)) +
     theme(plot.title = element_text(hjust = 0.5))
 }
-svg(filename = "../hiv_pol/RDV_hiv_pol_USA.svg")
-plotBestRooting(rdv, Maintitle = "HIV Subtype B - pol")
+svg(filename = "../flu_ha/RDV_flu_HA.svg")
+plotBestRooting(rdv, Maintitle = "Influenza A H3N2 - haemagglutinin")
 dev.off()
